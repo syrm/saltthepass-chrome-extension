@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "saltthepass",
+  "description": "SaltThePass the password manager",
+  "version": "0.2.6",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "html/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": ["https://*.saltthepass.com/", "http://*.saltthepass.com/"],
+      "css": ["css/saltthepass.css"],
+      "js": ["lib/jquery-1.10.2.min.js", "lib/saltthepass.withdeps.min.js", "js/global.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+
+  "sandbox": {
+    "pages": ["js/global.js", "html/prompt.html"]
+  },
+
+  "web_accessible_resources": [
+    "html/prompt.html"
+  ]
+
+}

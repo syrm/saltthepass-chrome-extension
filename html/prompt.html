@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SaltThePass</title>
+    <script src="/lib/jquery-1.10.2.min.js"></script>
+    <script src="/lib/saltthepass.withdeps.min.js"></script>
+    <script src="/lib/slider/js/bootstrap-slider.js"></script>
+    <link rel="stylesheet" href="/lib/slider/css/slider.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/prompt.css">
+    <script src="/js/prompt.js"></script>
+  </head>
+  <body>
+    <div id="prompt">
+      <p id="antiphishing">Set your anti-phishing in options!</p>
+
+      <p>Master Password</p>
+      <input id="master" type="password">
+
+      <p>Domain name</p>
+      <input id="domain" placeholder="Domain name" value="">
+
+      <p>Domain phrase</p>
+      <input id="domainphrase" placeholder="(optional)" value="">
+
+      <p><span id="lengthText">20</span> characters</p>
+      <input id="length" type="text" value="20" data-slider-min="1" data-slider-step="1" data-slider-tooltip="hide">
+
+      <button class="valid" id="saltbutton">salt the pass</button>
+    </div>
+  </body>
+</html>
+

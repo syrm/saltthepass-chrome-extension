@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>SaltThePass</title>
+    <script src="/lib/jquery-1.10.2.min.js"></script>
+    <script src="/lib/jquery-minicolors/jquery.minicolors.js"></script>
+    <link rel="stylesheet" href="/lib/jquery-minicolors/jquery.minicolors.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <script src="/js/popup.js"></script>
+  </head>
+  <body>
+    <div>
+      <span>Anti-Phishing</span>
+      <input type="text" id="antiphishing">
+    </div>
+
+    <div>
+      <span>Anti-Phishing Color</span>
+      <input type="text" id="antiphishingColor" value="#000000">
+    </div>
+
+    <div>
+      <span>Color</span>
+      <input id="color" value="#FF3322">
+    </div>
+
+    <div>
+      <span>Hash</span>
+      <select id="hash">
+        <option value="md5">MD5</option>
+        <option value="sha1">SHA-1</option>
+        <option value="sha2">SHA-2</option>
+        <option value="sha3" selected="selected">SHA-3</option>
+        <option value="ripemd160">RIPEMD-160</option>
+      </select>
+    </div>
+
+    <div class="alert">THIS ALPHA RELEASE MAY HAVE SECURITY ISSUES</div>
+
+    <div>
+      <button id="apply" class="valid">Apply</button>
+    </div>
+  </body>
+</html>
+
