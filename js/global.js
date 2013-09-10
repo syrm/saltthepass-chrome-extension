@@ -65,7 +65,7 @@ function hidePrompt()
 function requestPrompt()
 {
 
-  if ($('#saltthepass').length == 0 && $(inputPassword).data('dontshow') == undefined) {
+  if ($('#saltthepass').length == 0 && $(inputPassword).data('dontshow') == undefined && $(inputPassword).val().length == 0) {
     chrome.storage.sync.get("settings", function(data) {
       $('body').after('<iframe id="saltthepass" src="' + chrome.runtime.getURL("html/prompt.html") + '"></iframe>')
       $('#saltthepass').load(function() {
