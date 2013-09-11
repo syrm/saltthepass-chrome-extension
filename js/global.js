@@ -47,6 +47,7 @@ $(function() {
 
     if (e.data.action == 'password') {
       $(inputPassword).val(e.data.value)
+      $(inputPassword).focus()
       $('#saltthepass').remove()
     }
   })
