@@ -3,6 +3,7 @@ var settings = {}
 
 $(function() {
   chrome.storage.sync.get("settings", function(data) {
+    settings = data.settings
     $('#color').val(data.settings.color)
     $('#antiphishingColor').val(data.settings.antiphishingColor)
     $('#antiphishing').val(data.settings.antiphishing)
