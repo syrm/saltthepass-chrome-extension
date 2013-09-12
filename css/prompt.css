@@ -21,6 +21,9 @@ body {
     margin-top: 0;
     padding: 8px;
     background-color: red;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .slider-selection {
