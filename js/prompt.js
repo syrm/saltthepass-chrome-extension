@@ -19,7 +19,10 @@ $(function() {
   window.addEventListener("message", function(e) {
     settings = e.data.settings
 
-    $('#domain').val(e.data.domain)
+    if (e.data.domain != undefined) {
+      $('#domain').val(e.data.domain)
+    }
+
     $('body').css('border-color', settings.color)
     $('#antiphishing').css('background-color', settings.color)
     $('#antiphishing').text(settings.antiphishing)
