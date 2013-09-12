@@ -11,6 +11,7 @@ var settings = {
 
 chrome.storage.sync.get("settings", function(data) {
   chrome.storage.sync.set({settings: $.extend(settings, data.settings)})
+  settings = $.extend(settings, data.settings)
 })
 
 $(function() {

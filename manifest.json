@@ -3,7 +3,7 @@
 
   "name": "saltthepass",
   "description": "SaltThePass the password manager",
-  "version": "0.2.9",
+  "version": "0.2.10",
 
   "permissions": [
     "storage"
